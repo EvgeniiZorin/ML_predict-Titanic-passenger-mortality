@@ -1,0 +1,18 @@
+# Compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv
+env
+.venv
+.env
+
+# Scrap notebook
+checks.ipynb
+practice.ipynb
+temp.ipynb
+temp.txt
+
+# Private files
+secrets.py
