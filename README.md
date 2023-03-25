@@ -1,3 +1,6 @@
+# Description
+
+A Python Jupyter notebook containing the ML model for binary classification (i.e. death or no death) of data point based on numerous features from a Titanic dataset.
 
 # Dependencies
 
