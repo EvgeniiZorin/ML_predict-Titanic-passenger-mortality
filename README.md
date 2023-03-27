@@ -1,6 +1,15 @@
 # Description
 
-A Python Jupyter notebook containing the ML model for binary classification (i.e. death or no death) of data point based on numerous features from a Titanic dataset.
+A Python Jupyter notebook containing the ML model for binary classification (i.e. death or no death) of data points based on numerous features from a Titanic dataset.
+
+# Background
+
+Sinking of the Titanic was a great tragedy that still resonates with the world. From that horrible event, we have available a dataset for people who were on board of the Titanic, with information available for the seating class, fare paid for the ticket, etc., along with the data on survival. Naturally, this dataset was used by the ML community to see underlying patterns in the data, to be able to predict the survivability of a person based on his attributes from the dataset.
+
+# Features
+
+For this model, I used the following features:
+- 
 
 # Pipeline
 
