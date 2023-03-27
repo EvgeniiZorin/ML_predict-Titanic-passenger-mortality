@@ -6,10 +6,14 @@ A Python Jupyter notebook containing the ML model for binary classification (i.e
 
 Sinking of the Titanic was a great tragedy that still resonates with the world. From that horrible event, we have available a dataset for people who were on board of the Titanic, with information available for the seating class, fare paid for the ticket, etc., along with the data on survival. Naturally, this dataset was used by the ML community to see underlying patterns in the data, to be able to predict the survivability of a person based on his attributes from the dataset.
 
-# Features
+# Attributes
 
 For this model, I used the following features:
 - 
+
+Label to be predicted is "Survived" - a binary categorical variable with only two unique values - 0 and 1.  
+
+PassengerId	Survived	Pclass	Age	SibSp	Parch	Fare	Sex_female	Sex_male	Embarked_C	Embarked_Q	Embarked_S	Embarked_U
 
 # Pipeline
 
