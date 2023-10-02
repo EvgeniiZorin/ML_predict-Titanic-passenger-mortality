@@ -30,6 +30,8 @@ For this model, I used the following features:
 
 Label to be predicted is "Survived" - a binary categorical variable with only two unique values - 0 and 1.  
 
+Accuracy of final model on the test set = 0.827
+
 
 # Pipeline
 
