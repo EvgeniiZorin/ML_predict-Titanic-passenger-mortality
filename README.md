@@ -8,6 +8,8 @@ Sinking of the Titanic was a great tragedy that still resonates with the world. 
 
 # Data
 
+Dataset `231017_kaggle` is from https://www.kaggle.com/competitions/titanic/data
+
 For this model, I used the following features:
 - Pclass
 - SibSp
