@@ -10,34 +10,31 @@ Sinking of the Titanic was a great tragedy that still resonates with the world. 
 
 Dataset `231017_kaggle` is from https://www.kaggle.com/competitions/titanic/data
 
-For this model, I used the following features:
-- Pclass
-- SibSp
-- Parch
-- Fare: log normalised
-- Sex: one-hot encoded into 2 binary columns
-- Embarked: one-hot encoded into 4 binary columns
-- Age: binned into 8 columns
-
-Label to be predicted is "Survived" - a binary categorical variable with only two unique values - 0 and 1.  
-
 # ML models and performance
 
-## Model 1
+| Model version | Performance | Notes | Notebook |
+| - | - | - | - |
+| v1 | 
 
-The ML model `models/ML_model_Titanic.sav` accepts the following features in the following order: 
+## v1
 
-```py
-[
-	'Pclass', 'SibSp', 'Parch', 'Fare', 
-	'Sex_female', 'Sex_male', 
-	'Embarked_C', 'Embarked_Q', 'Embarked_S', 'Embarked_U', 
-	'Categorized_age_(0, 10]', 'Categorized_age_(10, 20]', 'Categorized_age_(20, 30]', 'Categorized_age_(30, 40]', 'Categorized_age_(40, 50]', 'Categorized_age_(50, 60]', 'Categorized_age_(60, 70]', 'Categorized_age_(70, 80]'
-]
-```
+Data was split 80-20 to train-test. 
 
-Accuracy of final model on the test set = 0.860
+The best model in training was SVC, which in 5-fold CV achieved median F1-score = 0.762. Test set of grid search finetuned model (SVC, C=2, kernel=poly), was F1-score = 0.748. 
 
+## v2
+
+Data was split 80-20 to train-test. 
+
+Checked different models. The chosen model was again SVC, but in the end chose a model based on gradient boosting: 
+
+GradientBoostingClassifier(max_depth=5, min_samples_leaf=15, n_estimators=50), Median training F1-score (5-fold CV): 0.763. Test set, F1-score = 0.786.
+
+## v3
+
+Data was NOT split, so train = 100% data.
+
+GradientBoost(learning_rate=0.5, min_samples_leaf=3, n_estimators=50). On train, 5-fold CV, median F1-score = 0.772.
 
 # Dependencies
 
